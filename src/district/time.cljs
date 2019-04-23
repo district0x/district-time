@@ -35,3 +35,11 @@
 
 (defn epoch->long [x]
   (* x 1000))
+
+
+(defn seconds->days [seconds]
+  (/ seconds 86400))
+
+
+(defn days->seconds [days]
+  (* days 86400))

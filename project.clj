@@ -1,4 +1,4 @@
-(defproject district0x/district-time "1.0.0"
+(defproject district0x/district-time "1.0.1"
   :description "Set of functions helpful for working with time"
   :url "https://github.com/district0x/district-time"
   :license {:name "Eclipse Public License"

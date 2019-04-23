@@ -15,7 +15,11 @@
 
   (is (= 1516314507000 (time/epoch->long 1516314507)))
 
-  (is (= 1516314507 (time/long->epoch 1516314507000))))
+  (is (= 1516314507 (time/long->epoch 1516314507000)))
+
+  (is (= 259200 (time/days->seconds 3)))
+
+  (is (= 4 (time/seconds->days 345600))))
 
 
 

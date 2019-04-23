@@ -7,7 +7,7 @@ Set of functions helpful for working with time.
 
 
 ## Installation
-Add `[district0x/district-time "1.0.0"]` into your project.clj  
+Add `[district0x/district-time "1.0.1"]` into your project.clj  
 Include `[district.time]` in your CLJS file  
 
 ## API Overview
@@ -18,6 +18,8 @@ Include `[district.time]` in your CLJS file
   - [time-remaining-biggest-unit](#time-remaining-biggest-unit)
   - [epoch->long](#epoch->long)
   - [long->epoch](#long->epoch)
+  - [days->seconds](#days->seconds)
+  - [seconds->days](#seconds->days)
   
 
 ## district.time
@@ -61,6 +63,20 @@ Converts long to epoch time format.
 ```clojure
 (time/long->epoch 1516314507000)
 ;; => 1516314507
+```
+
+#### <a name="days->seconds">`days->seconds [x]`
+Converts days to seconds.
+```clojure
+(time/days->seconds 3)
+;; => 259200
+```
+
+#### <a name="seconds->days">`seconds->days [x]`
+Converts seconds to days.
+```clojure
+(time/seconds->days 345600)
+;; => 259200
 ```
 
 ## Development
